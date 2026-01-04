@@ -16,3 +16,4 @@ for i in hex_input:
         print('☾༒꧁ERROR ꧂༒☾')
 
 print(ket_qua)
+#lol
