@@ -1,0 +1,18 @@
+from colorama import Fore, Style, init
+from token_table import TOKEN_TABLE
+init(autoreset=True)
+print(Fore.BLUE + 'TOOL DICH HEX SANG TOKEN')
+print(Fore.BLUE + 'v1.0.0. coder : unkornGD (a.k.a PY パイソン)')
+print(Fore.RED + 'luu y: cac chu cai tu A>F phai ghi hoa!, chuoi hex phai ghi cach nhau ra, vd: 61 62 63 ...!. cac ki tu bat on (wierd token) thi se ghi duoi dang. ▓,▒,░ , <01- FF>, mot so chu se ko dc ho tro tren python nen t se ghi voi cu phap (mot ki hieu) + <hex cua token>, vd: 4C = 0<4C>, hoac co the de phan biet mot so hex cos token bi trung nhau nhu AE va 3C thi mik cx se ghi theo cu phap do.')
+print('tutorial : cac ban input hex, luu y hex chi dc 2 chu, 1 chu hoac hon thi se bi loi!!')
+hex_input = input("Nhap hex: ").split()
+ket_qua = ""
+
+for i in hex_input:
+    if i in TOKEN_TABLE:
+        ket_qua += TOKEN_TABLE[i]
+    else:
+        ket_qua += Fore.RED + "× chuoi co Hex khong ton tai ×"
+        print('☾༒꧁ERROR ꧂༒☾')
+
+print(ket_qua)
